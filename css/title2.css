@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+    .parent-element {
+        display: flex;
+        height: 100vh;
+    }
+
+    .center-element {
+        text-align: center;
+        margin-bottom: 100px;
+    }
+
+    .titleimg {
+        width: 50%;
+        border-radius: 50%;
+    }
+
+    .title {
+        position: fixed;
+        top: 35%;
+        left: 25%;
+        width: 220px;
+        margin-right: 150px;
+    }
+
+    .left-align {
+        text-align: left;
+    }
+
+
+
+
+
+}
+
+@media (max-width: 768px) {
+    .title {
+        text-align: center;
+        margin-top: 35%;
+    }
+
+    .titleimg {
+        width: 35%;
+        border-radius: 50%;
+    }
+
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    font-weight: normal;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* p {
+        font-family: Arial, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        line-height: 1.5;
+    } */
