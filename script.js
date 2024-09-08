@@ -11,8 +11,8 @@ const likes = [
     `目前正在喜欢的动漫：颠倒的帕提玛、末日三问、少女终末旅行等，还有好多，写不完。`
 ];
 const greetingWordLinkMap = {
-    "地方": "https://xlog.threkork.me",
-    "article": "https://xlog.threkork.me"
+    "地方": "https://xlog.threkork.com",
+    "article": "https://xlog.threkork.com"
 };
 
 const likeWordLinkMap = {
