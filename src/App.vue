@@ -1,38 +1,41 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import ShadowBox from './components/ShadowBox.vue';
+import IntroView from './components/IntroView.vue'
+import IDCard from './components/IDCard.vue'
+import NoticeBoard from './components/NoticeBoard.vue'
 </script>
 
 <template>
   <main>
-    <HelloWorld />
+    <ShadowBox class="id-card inline">
+      <IDCard />
+      <IntroView />
+    </ShadowBox>
+
+    <ShadowBox class="notice-board">
+      <NoticeBoard />
+    </ShadowBox>
   </main>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+.id-card {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -60%);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.notice-board {
+  position: absolute;
+  top: 48%;
+  right: 35%;
+  transform: translate(50%, -60%);
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+/* 元素左右并排 */
+.inline {
+  display: flex;
+  align-items: center;
 }
 </style>

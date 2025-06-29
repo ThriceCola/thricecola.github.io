@@ -1,2 +1,32 @@
 @import './base.css';
-@import 'global.css'
+
+body {
+  background-color: #f8f8f5;
+}
+
+a:link {
+  color: #178760;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #8aafa9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #9bdacf;
+  text-decoration: none;
+}
+
+a:active {
+  color: #8aafa9;
+  text-decoration: none;
+}
+
+
+p.email {
+  color: #178760;
+  margin: 0;
+  text-indent: 0px;
+}
