@@ -115,7 +115,7 @@ changeGreeting()
 
 <template>
 
-  <h1 class="trans" :class="{ 'fade-out': !isGreetingVisible, 'fade-in': isGreetingVisible }"
+  <h1 class="trans notice-txt" :class="{ 'fade-out': !isGreetingVisible, 'fade-in': isGreetingVisible }"
     v-html="greetingWithLinks"></h1>
 
   <!-- <div class="txt">
@@ -134,5 +134,16 @@ changeGreeting()
 
 .trans {
   transition: opacity 0.5s ease-in-out;
+}
+
+/* @media (min-width: 768px) {
+  h1{}
+} */
+
+@media (max-width: 1350px) {
+  h1 {
+    font-size: 20px;
+    white-space: nowrap;
+  }
 }
 </style>

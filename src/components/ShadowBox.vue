@@ -38,7 +38,7 @@ onBeforeUnmount(() => {
   background-color: #f8f8f5;
   display: inline-block;
   padding: 22px 36px;
-  transition: height 0.25s ease;
+  /* transition: all 0.25s; */
   overflow: hidden;
 }
 </style>

@@ -7,7 +7,7 @@ import NoticeBoard from './components/NoticeBoard.vue'
 
 <template>
   <main>
-    <ShadowBox class="id-card inline">
+    <ShadowBox class="id-card">
       <IDCard />
       <IntroView />
     </ShadowBox>
@@ -19,23 +19,48 @@ import NoticeBoard from './components/NoticeBoard.vue'
 </template>
 
 <style scoped>
-.id-card {
-  position: absolute;
-  top: 50%;
-  left: 35%;
-  transform: translate(-50%, -60%);
+@media (min-width: 1349px) {
+
+  /* 元素左右并排 */
+  .id-card {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -60%);
+
+    display: flex;
+    align-items: center;
+  }
+
+  .notice-board {
+    position: absolute;
+    top: 48%;
+    right: 35%;
+    transform: translate(50%, -60%);
+  }
 }
 
-.notice-board {
-  position: absolute;
-  top: 48%;
-  right: 35%;
-  transform: translate(50%, -60%);
-}
+@media (max-width: 1350px) {
+  .id-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
 
-/* 元素左右并排 */
-.inline {
-  display: flex;
-  align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+  }
+
+  .notice-board {
+    position: absolute;
+    top: 80%;
+    left: 62%;
+    transform: translate(-50%, -60%);
+  }
 }
 </style>

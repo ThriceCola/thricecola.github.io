@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="title center-element left-align">
+  <div class="title">
     <img src="@/assets/img/512.jpg" alt="头像" class="titleimg">
     <h2>ThriceCola</h2>
     <h1>三瓶可乐不过岗</h1>
@@ -24,19 +24,24 @@ h1 {
 .title {
   width: 220px;
   height: 220px;
+  white-space: nowrap;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1350px) {
   .titleimg {
     width: 35%;
   }
 
   .title {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1349px) {
   .titleimg {
     width: 50%;
   }

@@ -27,7 +27,18 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 220px;
   max-width: 300px;
+}
+
+@media (max-width: 1349px) {
+  .txt {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1350px) {
+  .txt {
+    text-align: left;
+  }
 }
 </style>
