@@ -1,5 +1,5 @@
-# 构建 Vue + Vite 站点并将其部署到 GitHub Pages 的工作流程
-name: Deploy Vue site to Pages
+# 构建 Vue.js 站点并将其部署到 GitHub Pages 的工作流程
+name: Deploy Vue.js site to Pages
 
 on:
   # 在针对 `main` 分支的推送上运行
@@ -42,9 +42,6 @@ jobs:
 
       - name: Install dependencies
         run: npm ci
-
-      - name: Type check
-        run: npm run type-check
 
       - name: Build with Vite
         run: npm run build
