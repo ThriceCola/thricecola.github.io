@@ -4,6 +4,10 @@ jobs:
   build_vue:
     runs-on: ubuntu-latest
     name: Build Vue
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
     steps:
       - uses: actions/checkout@v2
       - id: Build-Vue
@@ -11,4 +15,4 @@ jobs:
         with:
           username: "ThriceCola"
           reponame: "thricecola.github.io"
-          token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+          token: ${{ secrets.GITHUB_TOKEN }} # Use default token with enhanced permissions
