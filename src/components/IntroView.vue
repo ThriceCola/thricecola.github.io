@@ -27,7 +27,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  white-space: normal;
+  word-break: keep-all;
+  text-wrap: balance;
   max-width: 300px;
 }
 

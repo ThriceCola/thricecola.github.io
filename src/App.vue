@@ -35,7 +35,7 @@ import NoticeBoard from './components/NoticeBoard.vue'
   .notice-board {
     position: absolute;
     top: 48%;
-    right: 35%;
+    right: 32%;
     transform: translate(50%, -60%);
   }
 }
