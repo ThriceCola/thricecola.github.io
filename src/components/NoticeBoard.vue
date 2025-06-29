@@ -136,14 +136,13 @@ changeGreeting()
   transition: opacity 0.5s ease-in-out;
 }
 
-/* @media (min-width: 768px) {
-  h1{}
-} */
+h1 {
+  white-space: nowrap;
+}
 
 @media (max-width: 1350px) {
   h1 {
     font-size: 20px;
-    white-space: nowrap;
   }
 }
 </style>

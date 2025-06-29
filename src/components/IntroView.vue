@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  white-space: normal;
   max-width: 300px;
 }
 
