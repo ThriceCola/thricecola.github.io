@@ -34,8 +34,8 @@ onBeforeUnmount(() => {
 <style scoped>
 .shadow-box {
   border: 1px solid #8aafa9;
-  box-shadow: -12px 14px 2px 1px #8aafa960;
-  background-color: #f8f8f5;
+  box-shadow: -12px 14px 2px 1px var(--shadow-color);
+  background-color: var(--background-color);
   display: inline-block;
   padding: 22px 36px;
   /* transition: all 0.25s; */

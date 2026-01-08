@@ -25,7 +25,7 @@ import NoticeBoard from './components/NoticeBoard.vue'
   .id-card {
     position: absolute;
     top: 50%;
-    left: 35%;
+    left: 37%;
     transform: translate(-50%, -60%);
 
     display: flex;
