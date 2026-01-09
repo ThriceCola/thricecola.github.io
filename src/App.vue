@@ -3,6 +3,9 @@ import ShadowBox from './components/ShadowBox.vue';
 import IntroView from './components/IntroView.vue'
 import IDCard from './components/IDCard.vue'
 import NoticeBoard from './components/NoticeBoard.vue'
+import { useTheme } from '@/components/useTheme';
+
+const { currentTheme, switchTheme, themes } = useTheme();
 </script>
 
 <template>
@@ -16,6 +19,13 @@ import NoticeBoard from './components/NoticeBoard.vue'
       <NoticeBoard />
     </ShadowBox>
   </main>
+
+
+  <div>
+    <select v-model="currentTheme" @change="switchTheme(currentTheme)">
+      <option v-for="t in themes" :key="t" :value="t">{{ t }}</option>
+    </select>
+  </div>
 </template>
 
 <style scoped>
@@ -34,7 +44,7 @@ import NoticeBoard from './components/NoticeBoard.vue'
 
   .notice-board {
     position: absolute;
-    top: 48%;
+    top: 53%;
     right: 32%;
     transform: translate(50%, -60%);
   }
@@ -59,6 +69,30 @@ import NoticeBoard from './components/NoticeBoard.vue'
   .notice-board {
     position: absolute;
     top: 80%;
+    left: 62%;
+    transform: translate(-50%, -60%);
+  }
+}
+
+@media (max-width: 800px) {
+  .id-card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+  }
+
+  .notice-board {
+    position: absolute;
+    top: 90%;
     left: 62%;
     transform: translate(-50%, -60%);
   }

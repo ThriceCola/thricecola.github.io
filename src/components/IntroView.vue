@@ -24,13 +24,12 @@
 
 <style scoped>
 .txt {
-  font-size: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   word-break: keep-all;
   text-wrap: balance;
-  max-width: 300px;
+  max-width: 290px;
 }
 
 @media (max-width: 1349px) {

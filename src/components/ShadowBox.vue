@@ -33,12 +33,16 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .shadow-box {
-  border: 1px solid #8aafa9;
+  border: 1px solid var(--semi-accent-color);
   box-shadow: -12px 14px 2px 1px var(--shadow-color);
   background-color: var(--background-color);
   display: inline-block;
   padding: 22px 36px;
   /* transition: all 0.25s; */
+  transition:
+    color 1s,
+    background-color 1s,
+    box-shadow 1s;
   overflow: hidden;
 }
 </style>

@@ -11,7 +11,31 @@
   --normal-text-color: #2F3F3A;
   --accent-color: #178760;
   --semi-accent-color: #8aafa9;
+  --highlight-color: #9bdacf;
   --shadow-color: #8aafa960;
+}
+
+/*:root {
+  --background-color: #111A16;
+  --normal-text-color: #E8E8DF;
+  --accent-color: #3fbf9a;
+  --semi-accent-color: #85D6BF;
+  --highlight-color: #A7E2D1;
+  --shadow-color: #3fbf9a40;
+}*/
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #121917;
+    --normal-text-color: #d6e2dd;
+    --accent-color: #3fbf9a;
+    --semi-accent-color: #2f6f63;
+    --highlight-color: #5fd3ba;
+    --shadow-color: #33BDA3;
+  }
+}
+
+:root {
   color: var(--normal-text-color);
 }
 
@@ -41,10 +65,9 @@ body {
 }
 
 
-/*@media (prefers-color-scheme: light) {*/
+
 
 body {
-
   background-color: var(--background-color);
 }
 
@@ -59,7 +82,7 @@ a:visited {
 }
 
 a:hover {
-  color: #9bdacf;
+  color: var(--highlight-color);
   text-decoration: none;
 }
 
@@ -68,11 +91,21 @@ a:active {
   text-decoration: none;
 }
 
+p {
+  font-size: 16px;
+}
 
 p.email {
-  color: #178760;
+  color: var(--accent-color);
   margin: 0;
   text-indent: 0px;
 }
 
-/*}*/
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 22px;
+}
