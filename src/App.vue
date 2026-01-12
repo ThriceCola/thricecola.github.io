@@ -31,13 +31,16 @@ const { currentTheme, switchTheme, themes } = useTheme();
 <style scoped>
 @media (min-width: 1349px) {
 
-  /* 元素左右并排 */
+  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
     left: 37%;
     transform: translate(-50%, -60%);
+  }
 
+  /* 内层：负责左右并排（ShadowBox 内部 wrapper） */
+  .id-card :deep(.shadow-box__content) {
     display: flex;
     align-items: center;
   }
@@ -51,6 +54,8 @@ const { currentTheme, switchTheme, themes } = useTheme();
 }
 
 @media (max-width: 1350px) {
+
+  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
@@ -58,6 +63,10 @@ const { currentTheme, switchTheme, themes } = useTheme();
     transform: translate(-50%, -60%);
 
     text-align: center;
+  }
+
+  /* 内层：负责上下排列（ShadowBox 内部 wrapper） */
+  .id-card :deep(.shadow-box__content) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,7 +83,11 @@ const { currentTheme, switchTheme, themes } = useTheme();
   }
 }
 
-@media (max-width: 800px) {
+
+
+@media (max-width: 1350px) and (max-height: 768px) {
+
+  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
@@ -82,6 +95,10 @@ const { currentTheme, switchTheme, themes } = useTheme();
     transform: translate(-50%, -60%);
 
     text-align: center;
+  }
+
+  /* 内层：负责上下排列（ShadowBox 内部 wrapper） */
+  .id-card :deep(.shadow-box__content) {
     display: flex;
     flex-direction: column;
     align-items: center;
