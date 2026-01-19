@@ -3,7 +3,7 @@
 
 <template>
   <div class="txt">
-    <p>会一点 Rust，会一点 Node.js，总之就是会一点 😣。</p>
+    <p>会一点 Rust 和 Node.js，总之就是会一点 😣。</p>
     <p>会打游戏，会吃饭，会小学算术。</p>
     <p>你是怎么找到我的主页的呢，交个朋友吧。</p>
     <div style="height: 15px;"></div>
