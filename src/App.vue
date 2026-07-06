@@ -3,9 +3,7 @@ import ShadowBox from './components/ShadowBox.vue';
 import IntroView from './components/IntroView.vue'
 import IDCard from './components/IDCard.vue'
 import NoticeBoard from './components/NoticeBoard.vue'
-import { useTheme } from '@/components/useTheme';
-
-const { currentTheme, switchTheme, themes } = useTheme();
+import ThemePills from './components/ThemePills.vue';
 </script>
 
 <template>
@@ -20,12 +18,7 @@ const { currentTheme, switchTheme, themes } = useTheme();
     </ShadowBox>
   </main>
 
-
-  <div>
-    <select v-model="currentTheme" @change="switchTheme(currentTheme)">
-      <option v-for="t in themes" :key="t" :value="t">{{ t }}</option>
-    </select>
-  </div>
+  <ThemePills />
 </template>
 
 <style scoped>

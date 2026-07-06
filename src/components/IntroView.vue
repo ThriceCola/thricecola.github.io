@@ -9,7 +9,7 @@
     <div style="height: 15px;"></div>
 
     <p>所做过的东西: <a href="https://github.com/ThriceCola/Kovi" target="_blank">Kovi</a></p>
-    <p>写文章的地方：<a href="https://xlog.thricecola.com" target="_blank">xLog</a></p>
+    <p>写文章的地方：<a href="https://blog.thricecola.com" target="_blank">Blog</a></p>
     <!-- <p>或许<a href="https://xlog.thricecola.com" target="_blank">xLog</a>还没有什么文章，你可以看看我的<a
         href="https://www.coolapk.com/u/3227002" target="_blank">酷安</a>主页。</p> -->
     <p>更多链接：<a href="https://github.com/thricecola" target="_blank">GitHub</a>、
