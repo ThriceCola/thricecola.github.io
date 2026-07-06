@@ -13,8 +13,8 @@ const greetings = ["Hi!",
   "Want to read my article?"
 ];
 const greetingWordLinkMap = {
-  "地方": "https://xlog.thricecola.com",
-  "article": "https://xlog.thricecola.com"
+  "地方": "https://blog.thricecola.com",
+  "article": "https://blog.thricecola.com"
 };
 
 // const likes = [
