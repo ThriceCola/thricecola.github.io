@@ -22,33 +22,33 @@ import ThemePills from './components/ThemePills.vue';
 </template>
 
 <style scoped>
+/* ========== 桌面端：水平保持原位置，右卡靠上下偏移制造意外感 ========== */
 @media (min-width: 1349px) {
-
-  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
-    left: 37%;
+    left: 49%;
     transform: translate(-50%, -60%);
   }
 
-  /* 内层：负责左右并排（ShadowBox 内部 wrapper） */
+  /* 左卡内部保留原始横向并排 */
   .id-card :deep(.shadow-box__content) {
     display: flex;
     align-items: center;
   }
 
+  /* 右卡：水平回到原始位置（right: 32%），但大幅降低高度 */
+  /* 意外感来自上下错位而非左右重叠 */
   .notice-board {
     position: absolute;
-    top: 53%;
-    right: 32%;
+    top: 50%;
+    right: 27%;
     transform: translate(50%, -60%);
   }
 }
 
+/* ========== 移动端：保持原有布局 ========== */
 @media (max-width: 1350px) {
-
-  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
@@ -58,7 +58,6 @@ import ThemePills from './components/ThemePills.vue';
     text-align: center;
   }
 
-  /* 内层：负责上下排列（ShadowBox 内部 wrapper） */
   .id-card :deep(.shadow-box__content) {
     display: flex;
     flex-direction: column;
@@ -76,11 +75,7 @@ import ThemePills from './components/ThemePills.vue';
   }
 }
 
-
-
 @media (max-width: 1350px) and (max-height: 768px) {
-
-  /* 外层：只负责定位 */
   .id-card {
     position: absolute;
     top: 50%;
@@ -90,7 +85,6 @@ import ThemePills from './components/ThemePills.vue';
     text-align: center;
   }
 
-  /* 内层：负责上下排列（ShadowBox 内部 wrapper） */
   .id-card :deep(.shadow-box__content) {
     display: flex;
     flex-direction: column;

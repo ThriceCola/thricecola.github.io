@@ -8,13 +8,14 @@ async function sleep(ms: number) {
 const greetings = ["Hi!",
   "你在看什么呢？",
   "看看其它地方吧！",
-  "Saluton!",
   "こんにちは!",
-  "Want to read my article?"
+  "Want to read my article?",
+  "想不想看看我的博客?"
 ];
 const greetingWordLinkMap = {
   "地方": "https://blog.thricecola.com",
-  "article": "https://blog.thricecola.com"
+  "article": "https://blog.thricecola.com",
+  "博客": "https://blog.thricecola.com"
 };
 
 // const likes = [
